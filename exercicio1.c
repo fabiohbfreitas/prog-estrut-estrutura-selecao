@@ -6,6 +6,7 @@
 void clear_terminal();
 
 int main() {
+  setlocale(LC_ALL, "Portuguese");
   clear_terminal();
 
   float readed_value = 0;
