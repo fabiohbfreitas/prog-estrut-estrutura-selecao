@@ -13,7 +13,15 @@ int main() {
   scanf(" %d", &readed_value);
   clear_terminal();
 
-  if (readed_value % 5 == 0) {
+  if (readed_value % (5*3*2)==0) {
+    printf("O valor é divisível por 5, 3 e 2.\n");
+  }else if (readed_value % (5*3) == 0) { 
+    printf("O valor é divisível por 5 e 3.\n");
+  } else if (readed_value % (5*2) == 0) { 
+    printf("O valor é divisível por 5 e 2.\n");
+  } else if (readed_value % (3*2) == 0) { 
+    printf("O valor é divisível por 3 e 2.\n");
+  } else if (readed_value % 5 == 0) {
     printf("O valor é divisível por 5.\n");
   } else if (readed_value % 3 == 0) {
     printf("O valor é divisível por 3.\n");
